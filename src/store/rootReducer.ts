@@ -1,4 +1,3 @@
-"user client";
 import { combineReducers } from "@reduxjs/toolkit";
 import { addToCartReducer } from "./reducers/addToCartReducers";
 

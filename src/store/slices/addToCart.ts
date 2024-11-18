@@ -1,10 +1,10 @@
 interface AddToCartInterface {
-    poductId: string;
+  productId: string;
 }
 
-export const Add_to_cart = ({ poductId }:AddToCartInterface) => {
+export const addToCart = ({ productId }: AddToCartInterface) => {
   return {
     type: "ADD_TO_CART_ACTION",
-    payload: poductId,
+    payload: { productId },
   };
 };

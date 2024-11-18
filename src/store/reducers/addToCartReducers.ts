@@ -1,14 +1,15 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 interface InitialStateProps {
   productId: string;
 }
 
 const initialState: InitialStateProps = {
-  productId: "abckd",
+  productId: "",
 };
 
 interface ActionProps {
   type: string;
-  payload?: string;
+  payload?: any;
 }
 
 export const addToCartReducer = (
@@ -19,7 +20,7 @@ export const addToCartReducer = (
     case "ADD_TO_CART_REDUCER":
       return {
         ...state,
-        productId: action.payload || state.productId,
+        productId: action.payload?.productId,
       };
     default:
       return state;

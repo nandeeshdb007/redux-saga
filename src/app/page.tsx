@@ -1,6 +1,12 @@
+"use client";
+import DisplayPage from "@/components/displayPage";
+import store from "@/store/store";
+import { Provider } from "react-redux";
 
 export default function Home() {
   return (
-   <div>Hello word</div>
+    <Provider store={store}>
+      <DisplayPage />
+    </Provider>
   );
 }

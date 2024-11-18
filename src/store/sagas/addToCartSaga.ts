@@ -4,7 +4,7 @@ import { Action } from "redux";
 
 interface AddToCartAction extends Action {
   type: string;
-  payload: any;
+  payload: { productId: string };
 }
 
 // Saga function
